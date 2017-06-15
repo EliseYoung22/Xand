@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <header>
     <title>XandInnovation</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  </header>
 
-  <body>
+  <main>
     <%= render 'partials/nav' %>
-
     <%= yield %>
-  </body>
+  </main>
+
+  <footer>
+    <%= render 'partials/footer'%>
+  </footer>
 </html>

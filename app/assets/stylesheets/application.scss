@@ -1,15 +1,4 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
  *= require_tree .
  *= require_self
  */
@@ -19,10 +8,98 @@
  // $secondary-color: color("yellow", "base") !default;
  @import 'materialize';
 
-.nav {
+nav {
+  background-color: transparent;
+  height: 100px;
+  line-height: 30px;
+}
+nav ul li:hover {
    background-color: transparent;
 }
-
 .nav-links {
-  color: black;
+  color: #888888;
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 30px;
+  height: 40px;
+  font-weight: 300;
+}
+
+.drop-nav-links {
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+button {
+  border-radius: 20px;
+  font-size: 20px;
+  color: #888888;
+  background-color: transparent;
+  border-color: #CB0000;
+}
+
+.page-footer {
+  background-color: grey;
+}
+
+.margin-left {
+  margin-left: 80px;
+}
+
+.welcome-title {
+  font-size: 70px;
+  border-bottom: 2px solid #CB0000;
+  width: 350px;
+  font-weight: 300;
+}
+.welcome-text {
+  font-size: 17px;
+}
+
+.slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+}
+.slider {
+  width: 900px;
+  margin: 0 auto;
+}
+.slider .indicators {
+  bottom: 60px;
+  z-index: 100;
+  /* text-align: left; */
+}
+
+// .container {
+//   display: flex; /* or inline-flex */
+// }
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
