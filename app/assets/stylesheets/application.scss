@@ -17,7 +17,7 @@ nav ul li:hover {
    background-color: transparent;
 }
 .nav-links {
-  color: #888888;
+  color: #585B61;
   font-size: 25px;
   margin-right: 20px;
   margin-top: 30px;
@@ -41,10 +41,10 @@ main {
 }
 
 button {
-  border-radius: 20px;
-  font-size: 20px;
-  color: #888888;
-  background-color: transparent;
+  border-radius: 25px;
+  font-size: 23px;
+  padding: 5px 10px;
+  color: #585B61;  background-color: transparent;
   border-color: #CB0000;
 }
 
@@ -61,6 +61,7 @@ button {
   border-bottom: 2px solid #CB0000;
   width: 350px;
   font-weight: 300;
+  color: #585B61;
 }
 .welcome-text {
   font-size: 17px;
@@ -108,4 +109,8 @@ button {
   font-size: 50px;
   font-weight: 300;
   border-bottom: 2px solid #CB0000;
+}
+
+.about-text {
+  font-size: 17px;
 }
