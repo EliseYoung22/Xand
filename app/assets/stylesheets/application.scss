@@ -5,7 +5,6 @@
 
  @import "materialize/components/color";
  $primary-color: transparent !default;
- // $secondary-color: color("yellow", "base") !default;
  @import 'materialize';
 
 nav {
@@ -14,6 +13,7 @@ nav {
   line-height: 30px;
 }
 nav ul li:hover {
+  text-decoration: none;
    background-color: transparent;
 }
 .nav-links {
@@ -102,4 +102,10 @@ button {
 
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
+}
+
+.about-sub-title {
+  font-size: 50px;
+  font-weight: 300;
+  border-bottom: 2px solid #CB0000;
 }
