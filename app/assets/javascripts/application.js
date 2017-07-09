@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require jquery
+//= require materialize
+
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
@@ -23,5 +25,4 @@ $(document).on('turbolinks:load', function(){
 $(document).ready(function(){
   $('.slider').slider();
   $(".button-collapse").sideNav();
-
 });
