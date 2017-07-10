@@ -40,14 +40,36 @@ h4 {
   justify-content: space-around;
 }
 
+.flex-container-about {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  // max-width: 50%
+}
 
-.flex-item{
+
+.flex-item {
   padding: 5px;
   height: 150px;
   margin-top: 10px;
-  // font-weight: bold;
 }
-.flex-item-home{
+
+.flex-item-image {
+  width: 650px;
+  text-align: center;
+}
+
+.flex-item-line {
+  // width: 650px;
+  text-align: center;
+}
+.flex-item-about-title {
+  width: 1350px;
+}
+
+.flex-item-home {
   width: 650px;
 }
 nav {
@@ -111,7 +133,7 @@ button {
   color: #585B61;
 }
 .welcome-text {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .slider .indicators .indicator-item {
