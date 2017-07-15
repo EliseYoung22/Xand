@@ -4,7 +4,7 @@ class ContactMailer < ApplicationMailer
   def send_contact_email(email, message)
     @email = email
     @message = message
-    mail(to: 'eliseyoung_4@hotmail.com', subject: 'New message from website') do |format|
+    mail(to: 'enquiries@xandinnovations', subject: 'New message from website') do |format|
       format.html { render 'send_contact_email' }
       format.text { render 'send_contact_email' }
     end

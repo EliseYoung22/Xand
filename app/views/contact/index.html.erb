@@ -7,12 +7,26 @@
     <% else %>
   <% end %>
 
-<h1>Contact Us</h1>
+  <div class="flex-container" style="padding-bottom:30px">
+    <div class="flex-item-image contact-banner">
+      <h1>Get in touch</h1>
+    </div>
+    <div class="flex-item-image" style="padding-bottom: 30px">
+      <%= simple_form_for :contact do |f| %>
+          <%= f.input :email, placeholder: 'type email here' %>
+          <%= f.input :message, placeholder: 'type message here', :as => :text %>
+          <%= f.button :submit, "Send" %>
+      <% end %>
+    </div>
+  </div>
 
-<%= simple_form_for :contact do |f| %>
-    <%= f.input :email, placeholder: 'type email here' %>
-    <%= f.input :message, placeholder: 'type message here', :as => :text %>
-    <%= f.button :submit, "Send" %>
-<% end %>
-
+  <div class="flex-container">
+    <div class="flex-item-contact">
+      <div class="row">
+        <i class="fa fa-phone fa-5x" aria-hidden="true" style="padding: 20px"><h5>ph: 02 9029 0113 - mobile: 0428945858</h5></i>
+        <i class="fa fa-map-marker fa-5x" aria-hidden="true" style="padding: 20px"><h5>PO Box 7031, Alexandria, NSW, 2015</h5></i>
+        <i class="fa fa-envelope-o fa-5x" aria-hidden="true" style="padding: 20px"><br>
+        <h5><a href="mailto:enquiries@xandinnovations.com" target="_top"> enquiries@xandinnovations.com</a></h5></i>
+      </div>
+    </div>
 </div>
