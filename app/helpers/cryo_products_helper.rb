@@ -1,0 +1,2 @@
+module CryoProductsHelper
+end
