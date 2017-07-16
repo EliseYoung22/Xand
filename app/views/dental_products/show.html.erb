@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @dental_product.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @dental_product.subtitle %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dental_product.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @dental_product.image %>
+</p>
+
+<%= link_to 'Edit', edit_dental_product_path(@dental_product) %> |
+<%= link_to 'Back', dental_products_path %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :dental_products
   # get 'contact/index'
   #
   # get 'contact/mail'
