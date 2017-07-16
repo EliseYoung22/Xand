@@ -1,0 +1,2 @@
+class CryoProduct < ApplicationRecord
+end

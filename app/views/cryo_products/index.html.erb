@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cryo Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Subtitle</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cryo_products.each do |cryo_product| %>
+      <tr>
+        <td><%= cryo_product.title %></td>
+        <td><%= cryo_product.subtitle %></td>
+        <td><%= cryo_product.description %></td>
+        <td><%= cryo_product.image %></td>
+        <td><%= link_to 'Show', cryo_product %></td>
+        <td><%= link_to 'Edit', edit_cryo_product_path(cryo_product) %></td>
+        <td><%= link_to 'Destroy', cryo_product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cryo Product', new_cryo_product_path %>

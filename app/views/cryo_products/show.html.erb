@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @cryo_product.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @cryo_product.subtitle %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cryo_product.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @cryo_product.image %>
+</p>
+
+<%= link_to 'Edit', edit_cryo_product_path(@cryo_product) %> |
+<%= link_to 'Back', cryo_products_path %>
