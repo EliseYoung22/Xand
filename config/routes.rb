@@ -1,11 +1,17 @@
 Rails.application.routes.draw do
+  # get 'contact/index'
+  #
+  # get 'contact/mail'
+
   root 'pages#home'
 
   get 'pages/about'
 
   get 'pages/products'
 
-  get 'pages/contact'
+  # get 'pages/contact'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'contact', to:"contact#index"
+  post 'contact', to:"contact#mail"
+
 end

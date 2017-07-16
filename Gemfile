@@ -9,7 +9,10 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 gem 'materialize-sass'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'simple_form'
 
+gem 'font-awesome-sass'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
