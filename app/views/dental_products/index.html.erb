@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Dental Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Subtitle</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dental_products.each do |dental_product| %>
+      <tr>
+        <td><%= dental_product.title %></td>
+        <td><%= dental_product.subtitle %></td>
+        <td><%= dental_product.description %></td>
+        <td><%= dental_product.image %></td>
+        <td><%= link_to 'Show', dental_product %></td>
+        <td><%= link_to 'Edit', edit_dental_product_path(dental_product) %></td>
+        <td><%= link_to 'Destroy', dental_product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dental Product', new_dental_product_path %>

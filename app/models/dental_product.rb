@@ -1,0 +1,2 @@
+class DentalProduct < ApplicationRecord
+end
