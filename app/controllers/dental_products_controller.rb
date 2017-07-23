@@ -69,6 +69,6 @@ class DentalProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dental_product_params
-      params.require(:dental_product).permit(:title, :subtitle, :description, :image)
+      params.require(:dental_product).permit(:title, :subtitle, :description, :image, :avatar)
     end
 end

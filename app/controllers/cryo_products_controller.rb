@@ -69,6 +69,6 @@ class CryoProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cryo_product_params
-      params.require(:cryo_product).permit(:title, :subtitle, :description, :image)
+      params.require(:cryo_product).permit(:title, :subtitle, :description, :image, :avatar)
     end
 end
