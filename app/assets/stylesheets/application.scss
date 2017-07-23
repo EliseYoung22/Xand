@@ -9,7 +9,9 @@
  @import "font-awesome-sprockets";
  @import "font-awesome";
 
-
+a:hover {
+  background-color: transparent
+}
 h4 {
   font-size: 23px;
 }
@@ -261,6 +263,13 @@ a {
   margin-top: 30px
 }
 .flex-item-product {
-  width: 650px;
+  width: 450px;
   text-align: center;
+}
+.product-banner {
+  height: 150px;
+  background-color: #585B61;
+  color: white;
+  width: 100%;
+  margin-bottom: 30px;
 }
