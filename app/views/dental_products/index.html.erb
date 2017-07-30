@@ -1,7 +1,7 @@
-<p id="notice"><%= notice %></p>
-<div class="flex-container">
+<!-- <p id="notice"><%= notice %></p> -->
+<div class="flex-container product-banner">
   <div class="flex-item">
-    <h1>Dental Products</h1>
+    <h1 style="font-weight:100">Dental Products</h1>
   </div>
 </div>
 
@@ -18,7 +18,7 @@
             <div class="product-subtitle">
               <%= dental_product.subtitle %>
             </div>
-            <div>
+            <div class="product-description">
               <%= image_tag dental_product.avatar.url(:medium) %>
             </div>
             <div class="product-description">
