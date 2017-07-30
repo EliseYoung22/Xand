@@ -8,12 +8,16 @@
  @import 'materialize';
  @import "font-awesome-sprockets";
  @import "font-awesome";
+ @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 a:hover {
   background-color: transparent
 }
 h4 {
   font-size: 23px;
+}
+.title{
+  font-family: 'Raleway', sans-serif;
 }
 
 .flex-container-home {
