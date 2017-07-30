@@ -1,13 +1,16 @@
 <header>
   <ul id="dropdown1" class="dropdown-content">
-    <li><a href="/pages/products" class="drop-nav-links">Dental</a></li>
-    <li><a href="/pages/products" class="drop-nav-links">Cryotherapy</a></li>
+    <li><a href="/dental_products" class="drop-nav-links">Dental</a></li>
+    <li><a href="/cryo_products" class="drop-nav-links">Cryotherapy</a></li>
     <li class="divider"></li>
   </ul>
   <nav>
     <div class="nav-wrapper">
       <a href="/"><img src="http://res.cloudinary.com/xand/image/upload/v1498045358/xand_jrdgmi.jpg" alt="rss feed" height="100px" width="200px" class="margin-left" /></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" style="color:black">menu</i></a>
+      <% if user_signed_in? %>
+      <%= link_to "Logout: #{current_user.email}", destroy_user_session_path, :method => :delete, class:"nav-item" %>
+      <% end %>
       <ul class="right hide-on-med-and-down">
         <li><a class="nav-links" href="/pages/about">About</a></li>
         <li><a class="dropdown-button nav-links" href="#!" data-activates="dropdown1">Products<i class="material-icons right"></i></a></li>
