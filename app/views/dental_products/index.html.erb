@@ -24,9 +24,13 @@
             <div class="product-description">
               <%= dental_product.description %>
             </div>
-            <!-- <%= link_to 'Show', dental_product %>
-            <%= link_to 'Edit', edit_dental_product_path(dental_product) %>
-            <%= link_to 'Destroy', dental_product, method: :delete, data: { confirm: 'Are you sure?' } %> -->
+            <div>
+              <%= dental_product.image %>
+            </div>
+            <% if user_signed_in? %>
+              <%= link_to 'Edit', edit_dental_product_path(dental_product) %>
+              <%= link_to 'Destroy', dental_product, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end%>
           </div>
         </div>
       </div>
@@ -35,5 +39,6 @@
 </body>
 
 <br>
-
-<%= link_to 'New Dental Product', new_dental_product_path %>
+<%if user_signed_in? %>
+  <%= link_to 'New Dental Product', new_dental_product_path %>
+<% end %>

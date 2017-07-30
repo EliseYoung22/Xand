@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :cryo_products
   resources :dental_products
   # get 'contact/index'

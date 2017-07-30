@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
 gem 'paperclip-cloudinary'
 gem "paperclip", "~> 5.0.0"
+gem 'devise'
 
 gem 'font-awesome-sass'
 # Use postgresql as the database for Active Record
